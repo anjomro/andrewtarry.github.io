@@ -99,7 +99,7 @@ And add it to the cluster by finding the `eks_managed_node_group_defaults` in th
 ```tf
   eks_managed_node_group_defaults = {
     instance_types = [var.instance_size]
-    vpc_security_group_ids = [aws_security_group.eks.id]
+    vpc_security_group_ids = [aws_security_group.efs.id]
   }
 ```
 
